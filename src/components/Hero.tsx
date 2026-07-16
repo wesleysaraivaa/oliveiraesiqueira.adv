@@ -123,7 +123,7 @@ export const Hero = () => {
       </motion.div>
 
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 text-[10px] tracking-[0.4em] uppercase text-ink-foreground/40 flex flex-col items-center gap-3">
-        <span>Desça</span>
+        <span>Scroll</span>
         <span className="h-10 w-px bg-ink-foreground/30 animate-pulse" />
       </div>
     </section>
