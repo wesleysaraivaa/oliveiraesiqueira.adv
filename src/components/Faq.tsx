@@ -3,7 +3,7 @@ import { Reveal, RevealWords } from "@/components/Reveal";
 const FAQ = [
   {
     q: "Como funciona a primeira consulta?",
-    a: "A consulta inicial é uma reunião reservada — presencial em Ubajara/CE or online — onde escutamos o caso, analisamos documentos preliminares e indicamos os caminhos jurídicos viáveis. Não há compromisso de contratação.",
+    a: "A consulta inicial é uma reunião reservada — presencialmente em Ubajara/CE ou de forma online. — onde escutamos o caso, analisamos documentos preliminares e indicamos os caminhos jurídicos viáveis. Não há compromisso de contratação.",
   },
   {
     q: "Atendem clientes fora de Ubajara?",
