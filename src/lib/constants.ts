@@ -1,5 +1,10 @@
 export const WHATSAPP = "https://wa.me/5588994454680";
 
+export const SITE_URL =
+  (typeof window !== "undefined" ? window.location.origin : null) ||
+  import.meta.env.VITE_SITE_URL ||
+  "https://oliveiraesiqueira-adv.vercel.app/";
+
 export const wa = (msg: string) => `${WHATSAPP}?text=${encodeURIComponent(msg)}`;
 
 // Coordenadas aproximadas — Rua Cel. Vicente, 312, Centro, Ubajara/CE

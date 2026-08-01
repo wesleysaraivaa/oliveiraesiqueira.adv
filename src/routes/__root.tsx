@@ -8,6 +8,7 @@ import {
 } from "@tanstack/react-router";
 
 import appCss from "../styles.css?url";
+import { SITE_URL } from "../lib/constants";
 
 function NotFoundComponent() {
   return (
@@ -79,6 +80,7 @@ export const Route = createRootRoute({
           "Escritório de advocacia em Ubajara/CE. Atuação técnica em Civil, Criminal, Família, Trabalhista, Previdenciário e Consumidor. Consulta direta pelo WhatsApp.",
       },
       { name: "author", content: "Oliveira & Siqueira Advocacia" },
+      { property: "og:url", content: SITE_URL },
       { property: "og:title", content: "Oliveira & Siqueira Advocacia — Ubajara/CE" },
       {
         property: "og:description",
@@ -86,7 +88,12 @@ export const Route = createRootRoute({
           "Escritório de advocacia em Ubajara/CE. Atuação técnica em Civil, Criminal, Família, Trabalhista, Previdenciário e Consumidor. Consulta direta pelo WhatsApp.",
       },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
+      { property: "og:image", content: `${SITE_URL}/assets/hero-columns-optimized.jpg` },
+      { property: "og:image:secure_url", content: `${SITE_URL}/assets/hero-columns-optimized.jpg` },
+      { property: "og:image:type", content: "image/jpeg" },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "800" },
+      { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@oliveirasiqueira" },
       { name: "twitter:title", content: "Oliveira & Siqueira Advocacia — Ubajara/CE" },
       {
@@ -94,14 +101,7 @@ export const Route = createRootRoute({
         content:
           "Escritório de advocacia em Ubajara/CE. Atuação técnica em Civil, Criminal, Família, Trabalhista, Previdenciário e Consumidor. Consulta direta pelo WhatsApp.",
       },
-      {
-        property: "og:image",
-        content: "/assets/hero-columns.jpg",
-      },
-      {
-        name: "twitter:image",
-        content: "/assets/hero-columns.jpg",
-      },
+      { name: "twitter:image", content: `${SITE_URL}/assets/hero-columns-optimized.jpg` },
     ],
     links: [
       { rel: "stylesheet", href: appCss },

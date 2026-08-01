@@ -1,7 +1,22 @@
 import { j as jsxRuntimeExports, r as reactExports } from "../_libs/react.mjs";
 import { L as Lenis } from "../_libs/lenis.mjs";
 import { m as motion } from "../_libs/motion.mjs";
+import { W as WHATSAPP, G as GMAPS_URL, w as wa, O as OFFICE_COORDS, a as OFFICE_ADDRESS } from "./router-TARqNEfJ.mjs";
 import { u as useScroll, a as useTransform, b as useMotionValue, c as useSpring } from "../_libs/framer-motion.mjs";
+import "../_libs/tanstack__react-router.mjs";
+import "../_libs/tanstack__router-core.mjs";
+import "../_libs/tanstack__history.mjs";
+import "../_libs/cookie-es.mjs";
+import "../_libs/seroval.mjs";
+import "../_libs/seroval-plugins.mjs";
+import "node:stream/web";
+import "node:stream";
+import "../_libs/react-dom.mjs";
+import "util";
+import "crypto";
+import "async_hooks";
+import "stream";
+import "../_libs/isbot.mjs";
 import "../_libs/motion-dom.mjs";
 import "../_libs/motion-utils.mjs";
 function SmoothScroll() {
@@ -102,13 +117,6 @@ function Magnetic({
   );
 }
 const heroPhoto = "/assets/HERO-BEnJBmGS.png";
-const WHATSAPP = "https://wa.me/5588994454680";
-const wa = (msg) => `${WHATSAPP}?text=${encodeURIComponent(msg)}`;
-const OFFICE_COORDS = [-3.8536, -40.9211];
-const OFFICE_ADDRESS = "Rua Cel. Vicente, 312, Centro, Ubajara, CE";
-const GMAPS_URL = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-  OFFICE_ADDRESS
-)}`;
 const WHATSAPP_URL = wa("Olá, gostaria de conversar com a Oliveira & Siqueira Advocacia.");
 const useFinePointer = () => {
   const [fine, setFine] = reactExports.useState(false);
@@ -805,7 +813,7 @@ function AttorneyRow({
 const FAQ = [
   {
     q: "Como funciona a primeira consulta?",
-    a: "A consulta inicial é uma reunião reservada — presencial em Ubajara/CE or online — onde escutamos o caso, analisamos documentos preliminares e indicamos os caminhos jurídicos viáveis. Não há compromisso de contratação."
+    a: "A consulta inicial é uma reunião reservada — presencialmente em Ubajara/CE ou de forma online. — onde escutamos o caso, analisamos documentos preliminares e indicamos os caminhos jurídicos viáveis. Não há compromisso de contratação."
   },
   {
     q: "Atendem clientes fora de Ubajara?",

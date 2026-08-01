@@ -14,6 +14,14 @@ import "async_hooks";
 import "stream";
 import "../_libs/isbot.mjs";
 const appCss = "/assets/styles-BmIZr5HX.css";
+const WHATSAPP = "https://wa.me/5588994454680";
+const SITE_URL = (typeof window !== "undefined" ? window.location.origin : null) || void 0 || "https://oliveiraesiqueira.adv.br";
+const wa = (msg) => `${WHATSAPP}?text=${encodeURIComponent(msg)}`;
+const OFFICE_COORDS = [-3.8536, -40.9211];
+const OFFICE_ADDRESS = "Rua Cel. Vicente, 312, Centro, Ubajara, CE";
+const GMAPS_URL = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+  OFFICE_ADDRESS
+)}`;
 function NotFoundComponent() {
   return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex min-h-screen items-center justify-center bg-background px-4", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-md text-center", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { className: "text-7xl font-bold text-foreground", children: "404" }),
@@ -31,7 +39,7 @@ function NotFoundComponent() {
 }
 function ErrorComponent({ error, reset }) {
   console.error(error);
-  const router = useRouter();
+  const router2 = useRouter();
   return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex min-h-screen items-center justify-center bg-background px-4", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-md text-center", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { className: "text-xl font-semibold tracking-tight text-foreground", children: "Esta página não carregou" }),
     /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "mt-2 text-sm text-muted-foreground", children: "Algo deu errado do nosso lado. Você pode tentar atualizar a página ou voltar para o início." }),
@@ -40,7 +48,7 @@ function ErrorComponent({ error, reset }) {
         "button",
         {
           onClick: () => {
-            router.invalidate();
+            router2.invalidate();
             reset();
           },
           className: "inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90",
@@ -69,27 +77,26 @@ const Route$1 = createRootRoute({
         content: "Escritório de advocacia em Ubajara/CE. Atuação técnica em Civil, Criminal, Família, Trabalhista, Previdenciário e Consumidor. Consulta direta pelo WhatsApp."
       },
       { name: "author", content: "Oliveira & Siqueira Advocacia" },
+      { property: "og:url", content: SITE_URL },
       { property: "og:title", content: "Oliveira & Siqueira Advocacia — Ubajara/CE" },
       {
         property: "og:description",
         content: "Escritório de advocacia em Ubajara/CE. Atuação técnica em Civil, Criminal, Família, Trabalhista, Previdenciário e Consumidor. Consulta direta pelo WhatsApp."
       },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
+      { property: "og:image", content: `${SITE_URL}/assets/hero-columns-optimized.jpg` },
+      { property: "og:image:secure_url", content: `${SITE_URL}/assets/hero-columns-optimized.jpg` },
+      { property: "og:image:type", content: "image/jpeg" },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "800" },
+      { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@oliveirasiqueira" },
       { name: "twitter:title", content: "Oliveira & Siqueira Advocacia — Ubajara/CE" },
       {
         name: "twitter:description",
         content: "Escritório de advocacia em Ubajara/CE. Atuação técnica em Civil, Criminal, Família, Trabalhista, Previdenciário e Consumidor. Consulta direta pelo WhatsApp."
       },
-      {
-        property: "og:image",
-        content: "/assets/hero-columns.jpg"
-      },
-      {
-        name: "twitter:image",
-        content: "/assets/hero-columns.jpg"
-      }
+      { name: "twitter:image", content: `${SITE_URL}/assets/hero-columns-optimized.jpg` }
     ],
     links: [
       { rel: "stylesheet", href: appCss },
@@ -118,7 +125,7 @@ function RootShell({ children }) {
 function RootComponent() {
   return /* @__PURE__ */ jsxRuntimeExports.jsx(Outlet, {});
 }
-const $$splitComponentImporter = () => import("./index-fsnyUJIt.mjs");
+const $$splitComponentImporter = () => import("./index-_704y5r7.mjs");
 const Route = createFileRoute("/")({
   component: lazyRouteComponent($$splitComponentImporter, "component"),
   head: () => ({
@@ -162,13 +169,22 @@ const rootRouteChildren = {
 };
 const routeTree = Route$1._addFileChildren(rootRouteChildren)._addFileTypes();
 const getRouter = () => {
-  const router = createRouter({
+  const router2 = createRouter({
     routeTree,
     scrollRestoration: true,
     defaultPreloadStaleTime: 0
   });
-  return router;
+  return router2;
 };
-export {
+const router = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
   getRouter
+}, Symbol.toStringTag, { value: "Module" }));
+export {
+  GMAPS_URL as G,
+  OFFICE_COORDS as O,
+  WHATSAPP as W,
+  OFFICE_ADDRESS as a,
+  router as r,
+  wa as w
 };
