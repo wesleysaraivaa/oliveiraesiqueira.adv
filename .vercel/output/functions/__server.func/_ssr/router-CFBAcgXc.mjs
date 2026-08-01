@@ -84,11 +84,9 @@ const Route$1 = createRootRoute({
         content: "Escritório de advocacia em Ubajara/CE. Atuação técnica em Civil, Criminal, Família, Trabalhista, Previdenciário e Consumidor. Consulta direta pelo WhatsApp."
       },
       { property: "og:type", content: "website" },
-      { property: "og:image", content: `${SITE_URL}/assets/hero-columns-optimized.jpg` },
-      { property: "og:image:secure_url", content: `${SITE_URL}/assets/hero-columns-optimized.jpg` },
+      { property: "og:image", content: `${SITE_URL}/assets/logo-fundo.jpg` },
+      { property: "og:image:secure_url", content: `${SITE_URL}/assets/logo-fundo.jpg` },
       { property: "og:image:type", content: "image/jpeg" },
-      { property: "og:image:width", content: "1200" },
-      { property: "og:image:height", content: "800" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@oliveirasiqueira" },
       { name: "twitter:title", content: "Oliveira & Siqueira Advocacia — Ubajara/CE" },
@@ -96,7 +94,7 @@ const Route$1 = createRootRoute({
         name: "twitter:description",
         content: "Escritório de advocacia em Ubajara/CE. Atuação técnica em Civil, Criminal, Família, Trabalhista, Previdenciário e Consumidor. Consulta direta pelo WhatsApp."
       },
-      { name: "twitter:image", content: `${SITE_URL}/assets/hero-columns-optimized.jpg` }
+      { name: "twitter:image", content: `${SITE_URL}/assets/logo-fundo.jpg` }
     ],
     links: [
       { rel: "stylesheet", href: appCss },
@@ -125,7 +123,7 @@ function RootShell({ children }) {
 function RootComponent() {
   return /* @__PURE__ */ jsxRuntimeExports.jsx(Outlet, {});
 }
-const $$splitComponentImporter = () => import("./index-Vqd3_X8J.mjs");
+const $$splitComponentImporter = () => import("./index-fxt0sZUK.mjs");
 const Route = createFileRoute("/")({
   component: lazyRouteComponent($$splitComponentImporter, "component"),
   head: () => ({
@@ -145,19 +143,13 @@ const Route = createFileRoute("/")({
       content: "Defesa jurídica com rigor e dignidade — Ubajara/CE."
     }, {
       property: "og:image",
-      content: `${SITE_URL}/assets/hero-columns-optimized.jpg`
+      content: `${SITE_URL}/assets/logo-fundo.jpg`
     }, {
       property: "og:image:secure_url",
-      content: `${SITE_URL}/assets/hero-columns-optimized.jpg`
+      content: `${SITE_URL}/assets/logo-fundo.jpg`
     }, {
       property: "og:image:type",
       content: "image/jpeg"
-    }, {
-      property: "og:image:width",
-      content: "1200"
-    }, {
-      property: "og:image:height",
-      content: "800"
     }, {
       property: "og:type",
       content: "website"

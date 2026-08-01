@@ -80,7 +80,7 @@ export function Testimonial() {
               {String(i + 1).padStart(2, "0")} / {String(TESTIMONIALS.length).padStart(2, "0")}
             </div>
           </div>
-          <div className="lg:col-span-9 min-h-[280px] sm:min-h-[240px]">
+          <div className="lg:col-span-9 min-h-70 sm:min-h-60">
             <motion.div
               key={i}
               initial={{ opacity: 0, y: 16 }}
