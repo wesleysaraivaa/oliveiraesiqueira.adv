@@ -9,6 +9,7 @@ import { Faq } from "@/components/Faq";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 import { useReveal } from "@/hooks/use-reveal";
+import { SITE_URL } from "../lib/constants";
 
 export const Route = createFileRoute("/")({
   component: Landing,
@@ -26,11 +27,15 @@ export const Route = createFileRoute("/")({
         property: "og:description",
         content: "Defesa jurídica com rigor e dignidade — Ubajara/CE.",
       },
-      { property: "og:image", content: "/assets/hero-columns.jpg" },
+      { property: "og:image", content: `${SITE_URL}/assets/hero-columns-optimized.jpg` },
+      { property: "og:image:secure_url", content: `${SITE_URL}/assets/hero-columns-optimized.jpg` },
+      { property: "og:image:type", content: "image/jpeg" },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "800" },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "/" },
+      { property: "og:url", content: SITE_URL },
     ],
-    links: [{ rel: "canonical", href: "/" }],
+    links: [{ rel: "canonical", href: SITE_URL }],
   }),
 });
 

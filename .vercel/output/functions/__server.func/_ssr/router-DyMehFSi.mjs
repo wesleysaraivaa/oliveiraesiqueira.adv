@@ -15,7 +15,7 @@ import "stream";
 import "../_libs/isbot.mjs";
 const appCss = "/assets/styles-BmIZr5HX.css";
 const WHATSAPP = "https://wa.me/5588994454680";
-const SITE_URL = (typeof window !== "undefined" ? window.location.origin : null) || void 0 || "https://oliveiraesiqueira.adv.br";
+const SITE_URL = (typeof window !== "undefined" ? window.location.origin : null) || void 0 || "https://oliveiraesiqueira-adv.vercel.app";
 const wa = (msg) => `${WHATSAPP}?text=${encodeURIComponent(msg)}`;
 const OFFICE_COORDS = [-3.8536, -40.9211];
 const OFFICE_ADDRESS = "Rua Cel. Vicente, 312, Centro, Ubajara, CE";
@@ -125,7 +125,7 @@ function RootShell({ children }) {
 function RootComponent() {
   return /* @__PURE__ */ jsxRuntimeExports.jsx(Outlet, {});
 }
-const $$splitComponentImporter = () => import("./index-_704y5r7.mjs");
+const $$splitComponentImporter = () => import("./index-Vqd3_X8J.mjs");
 const Route = createFileRoute("/")({
   component: lazyRouteComponent($$splitComponentImporter, "component"),
   head: () => ({
@@ -145,17 +145,29 @@ const Route = createFileRoute("/")({
       content: "Defesa jurídica com rigor e dignidade — Ubajara/CE."
     }, {
       property: "og:image",
-      content: "/assets/hero-columns.jpg"
+      content: `${SITE_URL}/assets/hero-columns-optimized.jpg`
+    }, {
+      property: "og:image:secure_url",
+      content: `${SITE_URL}/assets/hero-columns-optimized.jpg`
+    }, {
+      property: "og:image:type",
+      content: "image/jpeg"
+    }, {
+      property: "og:image:width",
+      content: "1200"
+    }, {
+      property: "og:image:height",
+      content: "800"
     }, {
       property: "og:type",
       content: "website"
     }, {
       property: "og:url",
-      content: "/"
+      content: SITE_URL
     }],
     links: [{
       rel: "canonical",
-      href: "/"
+      href: SITE_URL
     }]
   })
 });

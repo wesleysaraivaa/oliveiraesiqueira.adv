@@ -1,7 +1,7 @@
 let serverEntryPromise;
 async function getServerEntry() {
   if (!serverEntryPromise) {
-    serverEntryPromise = import("./server-BHg-4P32.mjs").then((n) => n.s).then(
+    serverEntryPromise = import("./server-CHNL8Dub.mjs").then((n) => n.s).then(
       (m) => m.default ?? m
     );
   }
